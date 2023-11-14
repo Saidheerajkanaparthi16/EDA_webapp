@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[4]:
 import numpy as np
 import pandas as pd
 import streamlit as st
@@ -21,7 +20,7 @@ This is the **EDA App** created in Streamlit using the **ydata_profiling** libra
 with st.sidebar.header('1. Upload your CSV data'):
     uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
     st.sidebar.markdown("""
-[Example CSV input file](https://raw.githubusercontent.com/dataprofessor/data/master/delaney_solubility_with_descriptors.csv)
+[Example CSV input file])
 """)
 
 # Pandas Profiling Report
@@ -55,21 +54,3 @@ else:
         st.write('---')
         st.header('**Pandas Profiling Report**')
         pr.to_notebook_iframe()
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
